@@ -1,12 +1,12 @@
 -- mapの定義
-map _ [] = []
-map f (x:xs) = f x : map f xs
+map' _ [] = []
+map' f (x:xs) = f x : map f xs
 
 -- mapが関手である事を確認する
 -- 射関数としての性質を確認する map g.mapf = map f.g
 
 f :: Integer -> Integer
-f x = x**2
+f x = x ^ 2
 
 g :: Integer -> Integer
 g x = x + 1
@@ -19,7 +19,7 @@ a = [0,1,2,3]
 
 main = do
     print("map f. map g >")
-    print(map f.map g a)
+    print(((map' f).(map' g)) a)
     print("map f.g >")
-    print(map f.g a)
+    print(map' (f.g) a)
 
