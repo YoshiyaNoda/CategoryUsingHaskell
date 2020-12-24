@@ -1,3 +1,10 @@
+-- module Main where
+
+-- import Lib
+
+-- main :: IO ()
+-- main = someFunc
+--------------------------
 -- mapの定義
 map' _ [] = []
 map' f (x:xs) = f x : map f xs
@@ -22,4 +29,5 @@ main = do
     print(((map' f).(map' g)) a)
     print("map f.g >")
     print(map' (f.g) a)
+
 

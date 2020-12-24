@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 1e4189b3e8c02402c14fa39a66d0dc7f65f5f0590ad46a32d2bc9e6fb7d2bbb9
+
+name:           map-functor
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/map-functor#readme>
+homepage:       https://github.com/githubuser/map-functor#readme
+bug-reports:    https://github.com/githubuser/map-functor/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/map-functor
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_map_functor
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable map-functor-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_map_functor
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , map-functor
+  default-language: Haskell2010
+
+test-suite map-functor-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_map_functor
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , map-functor
+  default-language: Haskell2010
