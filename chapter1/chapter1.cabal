@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7acaaff8aeb16c00bcc3d1576a99c409d88852cd840a5fc630d60b8cf8a65988
+-- hash: 6067e842b2470659536a8a911deb17887a2d672b30b3e085f18a6561ed65311f
 
 name:           chapter1
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      MapFunctor
   other-modules:
       Paths_chapter1
   hs-source-dirs:
